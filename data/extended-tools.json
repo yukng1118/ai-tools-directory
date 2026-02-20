@@ -1,0 +1,176 @@
+{
+  "imageDesign": [
+    {
+      "name": "Midjourney",
+      "slug": "midjourney",
+      "tagline": "AI image generation via Discord",
+      "description": "Midjourney creates stunning, artistic images from text prompts. Known for beautiful, detailed outputs.",
+      "websiteUrl": "https://www.midjourney.com",
+      "pricingModel": "PAID",
+      "startingPrice": 10,
+      "useCases": ["Art creation", "Product visualization", "Marketing assets"],
+      "features": ["High-quality images", "Style variations", "Upscaling"]
+    },
+    {
+      "name": "Leonardo.ai",
+      "slug": "leonardo-ai",
+      "tagline": "AI art and game asset generator",
+      "description": "Leonardo creates production-quality visual assets for games and creative projects.",
+      "websiteUrl": "https://leonardo.ai",
+      "pricingModel": "FREEMIUM",
+      "startingPrice": 0,
+      "useCases": ["Game assets", "Concept art", "Marketing images"],
+      "features": ["Fine-tuned models", "Canvas editor", "Motion"]
+    },
+    {
+      "name": "Canva AI",
+      "slug": "canva-ai",
+      "tagline": "AI design tools for non-designers",
+      "description": "Canva's Magic Write and AI features help create designs, presentations, and social media content.",
+      "websiteUrl": "https://www.canva.com",
+      "pricingModel": "FREEMIUM",
+      "startingPrice": 15,
+      "useCases": ["Social graphics", "Presentations", "Marketing materials"],
+      "features": ["Magic Write", "Text to Image", "Background remover"]
+    }
+  ],
+  "video": [
+    {
+      "name": "Runway Gen-2",
+      "slug": "runway-gen-2",
+      "tagline": "AI video generation from text/image",
+      "description": "Runway creates realistic videos from text prompts or images. Industry-leading AI video tool.",
+      "websiteUrl": "https://runwayml.com",
+      "pricingModel": "FREEMIUM",
+      "startingPrice": 12,
+      "useCases": ["Video generation", "Motion graphics", "Video editing"],
+      "features": ["Text to video", "Image to video", "Video to video"]
+    },
+    {
+      "name": "HeyGen",
+      "slug": "heygen",
+      "tagline": "AI avatar video generation",
+      "description": "HeyGen creates professional videos with AI avatars. Perfect for marketing and training content.",
+      "websiteUrl": "https://www.heygen.com",
+      "pricingModel": "FREEMIUM",
+      "startingPrice": 24,
+      "useCases": ["Marketing videos", "Training content", "Sales videos"],
+      "features": ["AI avatars", "Text to speech", "Templates"]
+    },
+    {
+      "name": "Synthesia",
+      "slug": "synthesia",
+      "tagline": "AI video creation platform",
+      "description": "Synthesia creates professional videos with AI presenters in 120+ languages.",
+      "websiteUrl": "https://www.synthesia.io",
+      "pricingModel": "PAID",
+      "startingPrice": 22,
+      "useCases": ["Training videos", "How-to content", "Corporate comms"],
+      "features": ["AI presenters", "Multilingual", "Screen recorder"]
+    }
+  ],
+  "audio": [
+    {
+      "name": "ElevenLabs",
+      "slug": "elevenlabs",
+      "tagline": "Most realistic AI voice generator",
+      "description": "ElevenLabs creates lifelike speech from text with voice cloning capabilities.",
+      "websiteUrl": "https://elevenlabs.io",
+      "pricingModel": "FREEMIUM",
+      "startingPrice": 0,
+      "useCases": ["Voiceovers", "Audiobooks", "Content narration"],
+      "features": ["Voice cloning", "Multilingual", "Emotion control"]
+    },
+    {
+      "name": "Murf AI",
+      "slug": "murf-ai",
+      "tagline": "Studio-quality AI voiceovers",
+      "description": "Murf creates professional voiceovers from text for videos, presentations, and e-learning.",
+      "websiteUrl": "https://murf.ai",
+      "pricingModel": "FREEMIUM",
+      "startingPrice": 0,
+      "useCases": ["E-learning", "YouTube videos", "Podcasts"],
+      "features": ["120+ voices", "Voice changer", "Google Slides add-on"]
+    }
+  ],
+  "developer": [
+    {
+      "name": "GitHub Copilot",
+      "slug": "github-copilot",
+      "tagline": "AI pair programmer",
+      "description": "Copilot suggests code and entire functions in real-time right in your editor.",
+      "websiteUrl": "https://github.com/features/copilot",
+      "pricingModel": "PAID",
+      "startingPrice": 10,
+      "useCases": ["Code completion", "Unit tests", "Documentation"],
+      "features": ["Code suggestions", "Chat interface", "CLI integration"]
+    },
+    {
+      "name": "Cursor",
+      "slug": "cursor",
+      "tagline": "AI-first code editor",
+      "description": "Cursor is a code editor built for AI pair programming with built-in chat and composer.",
+      "websiteUrl": "https://cursor.sh",
+      "pricingModel": "FREEMIUM",
+      "startingPrice": 0,
+      "useCases": ["Code editing", "Refactoring", "Code review"],
+      "features": ["AI chat", "Composer", "Codebase understanding"]
+    },
+    {
+      "name": "V0 by Vercel",
+      "slug": "v0-vercel",
+      "tagline": "Generate React UI with AI",
+      "description": "V0 generates React components from text prompts using shadcn/ui and Tailwind CSS.",
+      "websiteUrl": "https://v0.dev",
+      "pricingModel": "FREE",
+      "startingPrice": 0,
+      "useCases": ["UI components", "Landing pages", "Prototyping"],
+      "features": ["Text to UI", "React export", "shadcn/ui integration"]
+    }
+  ],
+  "productivity": [
+    {
+      "name": "Perplexity AI",
+      "slug": "perplexity-ai",
+      "tagline": "AI-powered answer engine",
+      "description": "Perplexity provides accurate, cited answers to any question using real-time web search.",
+      "websiteUrl": "https://www.perplexity.ai",
+      "pricingModel": "FREEMIUM",
+      "startingPrice": 0,
+      "useCases": ["Research", "Questions", "Learning"],
+      "features": ["Citations", "Real-time search", "Copilot mode"]
+    },
+    {
+      "name": "Notion AI",
+      "slug": "notion-ai",
+      "tagline": "AI writing assistant in your workspace",
+      "description": "Notion AI helps write, edit, summarize, and brainstorm right inside Notion.",
+      "websiteUrl": "https://www.notion.so/product/ai",
+      "pricingModel": "PAID",
+      "startingPrice": 10,
+      "useCases": ["Writing", "Summarizing", "Brainstorming"],
+      "features": ["Draft generation", "Translation", "Q&A on docs"]
+    },
+    {
+      "name": "Gamma",
+      "slug": "gamma",
+      "tagline": "AI presentations and documents",
+      "description": "Gamma creates beautiful presentations, documents, and websites from text prompts.",
+      "websiteUrl": "https://gamma.app",
+      "pricingModel": "FREEMIUM",
+      "startingPrice": 0,
+      "useCases": ["Presentations", "Documents", "Websites"],
+      "features": ["One-click themes", "AI editing", "Analytics"]
+    }
+  ],
+  "sales": [
+    {
+      "name": "Apollo AI",
+      "slug": "apollo-ai",
+      "tagline": "AI sales intelligence platform",
+      "description": "Apollo combines B2B contacts database with AI writing and engagement tools.",
+      "websiteUrl": "https://www.apollo.io",
+      "pricingModel": "FREEMIUM",
+      "startingPrice": 0,
+      "useCases": ["Lead gen", "Email automation", "Prospecting"],
+      "features": ["Contact database", "Email

@@ -1,0 +1,96 @@
+{
+  "categories": [
+    {
+      "name": "E-commerce",
+      "slug": "e-commerce",
+      "description": "AI tools for online retail and e-commerce operations",
+      "icon": "shopping-cart"
+    },
+    {
+      "name": "Marketing",
+      "slug": "marketing",
+      "description": "AI tools for marketing, content creation, and advertising",
+      "icon": "megaphone"
+    },
+    {
+      "name": "Legal",
+      "slug": "legal",
+      "description": "AI tools for legal research, document review, and compliance",
+      "icon": "scale"
+    },
+    {
+      "name": "Image & Design",
+      "slug": "image-design",
+      "description": "AI tools for image generation, editing, and graphic design",
+      "icon": "image"
+    },
+    {
+      "name": "Video",
+      "slug": "video",
+      "description": "AI tools for video generation, editing, and production",
+      "icon": "video"
+    },
+    {
+      "name": "Audio & Voice",
+      "slug": "audio",
+      "description": "AI tools for voice generation, audio editing, and music",
+      "icon": "headphones"
+    },
+    {
+      "name": "Developer Tools",
+      "slug": "developer",
+      "description": "AI tools for coding assistance and software development",
+      "icon": "code"
+    },
+    {
+      "name": "Productivity",
+      "slug": "productivity",
+      "description": "AI tools for productivity, research, and workflow automation",
+      "icon": "zap"
+    },
+    {
+      "name": "Sales & CRM",
+      "slug": "sales",
+      "description": "AI tools for sales automation and customer management",
+      "icon": "briefcase"
+    }
+  ],
+  "tools": [
+    {
+      "name": "Jasper",
+      "categorySlug": "e-commerce",
+      "tagline": "AI writing assistant for e-commerce product descriptions",
+      "description": "Create compelling product descriptions, ad copy, and marketing content at scale.",
+      "websiteUrl": "https://www.jasper.ai",
+      "pricingModel": "PAID",
+      "startingPrice": 49,
+      "hasFreeTier": false,
+      "hasFreeTrial": true,
+      "useCases": ["Product descriptions", "Ad copy", "Email marketing"]
+    },
+    {
+      "name": "Copy.ai",
+      "categorySlug": "e-commerce",
+      "tagline": "AI copywriting for marketing",
+      "description": "Generate high-converting copy with 90+ templates.",
+      "websiteUrl": "https://www.copy.ai",
+      "pricingModel": "FREE",
+      "startingPrice": 0,
+      "hasFreeTier": true,
+      "hasFreeTrial": false,
+      "useCases": ["Product descriptions", "Facebook ads", "Email sequences"]
+    },
+    {
+      "name": "ChatGPT",
+      "categorySlug": "marketing",
+      "tagline": "Multi-purpose AI for content creation",
+      "description": "Brainstorm ideas, write copy, analyze data, and automate workflows.",
+      "websiteUrl": "https://chat.openai.com",
+      "pricingModel": "FREEMIUM",
+      "startingPrice": 20,
+      "hasFreeTier": true,
+      "hasFreeTrial": true,
+      "useCases": ["Content creation", "Strategy", "Email writing"]
+    }
+  ]
+}

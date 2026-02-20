@@ -1,0 +1,64 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Category {
+  id          String    @id @default(cuid())
+  name        String    @unique
+  slug        String    @unique
+  description String?
+  icon        String?
+  tools       Tool[]
+  createdAt   DateTime  @default(now())
+
+  @@map("categories")
+}
+
+model Tool {
+  id              String   @id @default(cuid())
+  name            String
+  slug            String   @unique
+  tagline         String
+  description     String
+  websiteUrl      String
+  logoUrl         String?
+  
+  // Pricing as strings for SQLite
+  pricingModel    String   @default("FREEMIUM") // FREE, FREEMIUM, PAID, ENTERPRISE, CONTACT
+  startingPrice   Float?
+  hasFreeTier     Boolean  @default(false)
+  hasFreeTrial    Boolean  @default(false)
+  
+  // Categorization
+  categoryId      String
+  category        Category @relation(fields: [categoryId], references: [id])
+  subcategory     String?
+  useCases        String   @default("") // JSON string
+  features        String   @default("") // JSON string
+  integrations    String   @default("") // JSON string
+  
+  // Technical
+  deployment      String   @default("SAAS") // SAAS, API, SELF_HOSTED, DESKTOP, BROWSER_EXTENSION, MOBILE_APP
+  
+  // Company info
+  companyName     String?
+  
+  // Social proof
+  rating          Float?
+  reviewCount     Int      @default(0)
+  
+  // Status
+  status          String   @default("PENDING") // PENDING, APPROVED, REJECTED
+  featured        Boolean  @default(false)
+  featuredOrder   Int      @default(0)
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@map("tools")
+}
