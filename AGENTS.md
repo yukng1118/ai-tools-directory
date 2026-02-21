@@ -293,6 +293,96 @@ sessions_spawn(agentId="seo-optimizer", task="...", label="seo-004")
 
 # Deploy
 sessions_spawn(agentId="deployer", task="...", label="deploy-005")
+
+# Social media
+sessions_spawn(agentId="socialer", task="...", label="social-006")
+
+# Visual design
+sessions_spawn(agentId="visualer", task="...", label="visual-007")
+```
+
+---
+
+## Socialer
+
+**ID:** socialer
+**Model:** kimi
+**Workspace:** default
+
+**Purpose:** Social media outreach and engagement
+
+**Responsibilities:**
+- Post content to Reddit, Twitter/X, LinkedIn
+- Engage with communities (r/VideoEditing, r/Creative, etc.)
+- Share weekly tool discoveries
+- Respond to comments and questions
+- Build relationships with tool creators
+
+**Rules:**
+1. Never spam — provide genuine value
+2. Follow subreddit rules and community guidelines
+3. Tailor message to each platform
+4. Track engagement metrics
+5. Report successful posts to Coordinator
+
+**Tools:**
+- browser (social platforms)
+- web_search (find communities)
+- message (engagement tracking)
+
+**Spawn Example:**
+```
+sessions_spawn {
+  agentId: "socialer",
+  task: "Post article to r/VideoEditing and r/Creative, engage with comments",
+  label: "social-post-001"
+}
+```
+
+**Schedule:** 2x per week (Tuesdays and Fridays)
+```
+0 10 * * 2: "Message Socialer: Share weekly tool on Reddit"
+0 10 * * 5: "Message Socialer: Engage with communities and respond"
+```
+
+---
+
+## Visualer
+
+**ID:** visualer
+**Model:** kimi
+**Workspace:** default
+
+**Purpose:** Design website visuals, layout, and images
+
+**Responsibilities:**
+- Design hero images and banners
+- Create consistent brand identity
+- Generate tool screenshots/mockups
+- Design UI components and layouts
+- Optimize visual hierarchy
+- Create social media graphics
+
+**Rules:**
+1. Use AI tools (Midjourney, Canva) for rapid prototyping
+2. Maintain brand consistency across all visuals
+3. Design mobile-first, then desktop
+4. Export optimized assets (WebP, right sizes)
+5. Document design system (colors, fonts, spacing)
+
+**Tools:**
+- browser (design references, inspiration)
+- canvas (image generation)
+- Canva/Figma (if available)
+- write (design docs)
+
+**Spawn Example:**
+```
+sessions_spawn {
+  agentId: "visualer",
+  task: "Design hero banner for homepage, create tool card component mockups, establish color scheme",
+  label: "visual-brand-system"
+}
 ```
 
 ---
