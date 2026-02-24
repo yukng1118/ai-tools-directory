@@ -1,0 +1,59 @@
+name: W1 Health Check
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+  workflow_dispatch:
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup tools
+        run: |
+          npm install -g @openclaw/cli || echo "OpenClaw not available"
+
+      - name: Run health check
+        run: |
+          #!/bin/bash
+          SITE_URL="https://ai-directory-pearl.vercel.app"
+          
+          echo "🔍 Checking W1 health..."
+          
+          # Check homepage
+          response=$(curl -sSf "$SITE_URL" -o /dev/null -w "%{http_code}")
+          if [ "$response" = "200" ]; then
+            echo "✅ Homepage: OK ($response)"
+          else
+            echo "❌ Homepage: Failed ($response)"
+            exit 1
+          fi
+          
+          # Check directory page
+          response=$(curl -sSf "$SITE_URL/directory" -o /dev/null -w "%{http_code}")
+          if [ "$response" = "200" ]; then
+            echo "✅ Directory: OK ($response)"
+          else
+            echo "❌ Directory: Failed ($response)"
+          fi
+          
+          # Check sample tool pages
+          for slug in jasper chatgpt cursor; do
+            response=$(curl -sSf "$SITE_URL/directory/$slug" -o /dev/null -w "%{http_code}")
+            if [ "$response" = "200" ]; then
+              echo "✅ Tool /$slug: OK"
+            else
+              echo "⚠️ Tool /$slug: $response"
+            fi
+          done
+          
+          echo "Health check complete"
+
+      - name: Report to Coordinator
+        if: failure()
+        run: |
+          echo "@coordinator W1 health check failed - immediate attention required"

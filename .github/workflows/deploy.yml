@@ -1,0 +1,40 @@
+name: Deploy to Vercel
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v25
+        id: vercel-deploy
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          vercel-args: '--prod'
+
+      - name: Get deployment URL
+        run: echo "Deployed to ${{ steps.vercel-deploy.outputs.preview-url }}"
+
+      - name: Health check
+        run: |
+          sleep 10
+          curl -sSf "${{ steps.vercel-deploy.outputs.preview-url }}" > /dev/null || exit 1
+
+      - name: Notify success
+        if: success()
+        run: |
+          echo "✅ Deployment successful: ${{ steps.vercel-deploy.outputs.preview-url }}"
+
+      - name: Notify failure
+        if: failure()
+        run: |
+          echo "❌ Deployment failed"
