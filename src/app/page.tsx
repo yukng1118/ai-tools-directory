@@ -1,5 +1,9 @@
+'use client'
+
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 import { tools, categories } from '@/lib/static-data'
+import { ThemeToggle } from '@/components/ThemeToggle'
 
 export default function HomePage() {
   const featuredTools = tools.filter(t => t.featured).slice(0, 6)
