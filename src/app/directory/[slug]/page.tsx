@@ -1,9 +1,40 @@
 import Link from 'next/link'
 import { tools, categories } from '@/lib/static-data'
 import { notFound } from 'next/navigation'
+import type { Metadata } from 'next'
 
 export function generateStaticParams() {
   return tools.map(tool => ({ slug: tool.slug }))
+}
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const tool = tools.find(t => t.slug === params.slug)
+  
+  if (!tool) {
+    return {
+      title: 'Tool Not Found | AI Tools Directory',
+      description: 'The requested AI tool could not be found.',
+    }
+  }
+
+  return {
+    title: `${tool.name} - ${tool.tagline} | AI Tools Directory`,
+    description: tool.description,
+    keywords: [tool.category, tool.name, 'AI tools', `AI ${tool.category}`, tool.pricingModel],
+    openGraph: {
+      title: `${tool.name} - ${tool.tagline}`,
+      description: tool.description,
+      url: `https://ai-directory-pearl.vercel.app/directory/${tool.slug}`,
+      siteName: 'AI Tools Directory',
+      locale: 'en_US',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${tool.name} - ${tool.tagline}`,
+      description: tool.description,
+    },
+  }
 }
 
 export default function ToolPage({ params }: { params: { slug: string } }) {
