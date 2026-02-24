@@ -36,6 +36,17 @@
   ],
   "video": [
     {
+      "name": "OpenAI Sora",
+      "slug": "openai-sora",
+      "tagline": "Text-to-video generation",
+      "description": "OpenAI's Sora creates realistic videos from text prompts with exceptional quality and consistency.",
+      "websiteUrl": "https://openai.com/sora",
+      "pricingModel": "PAID",
+      "startingPrice": 100,
+      "useCases": ["Video generation", "Creative content", "Prototypes"],
+      "features": ["Text to video", "High quality", "Consistent characters"]
+    },
+    {
       "name": "Runway Gen-2",
       "slug": "runway-gen-2",
       "tagline": "AI video generation from text/image",
@@ -71,6 +82,17 @@
   ],
   "audio": [
     {
+      "name": "Hume AI Octave",
+      "slug": "hume-ai-octave",
+      "tagline": "World's most expressive voice AI",
+      "description": "Hume AI's Octave generates emotionally rich voice with unprecedented expressiveness and control.",
+      "websiteUrl": "https://www.hume.ai",
+      "pricingModel": "PAID",
+      "startingPrice": 50,
+      "useCases": ["Voice generation", "Emotional speech", "Character voices"],
+      "features": ["Expressive voice", "Emotional control", "Unique characters"]
+    },
+    {
       "name": "ElevenLabs",
       "slug": "elevenlabs",
       "tagline": "Most realistic AI voice generator",
@@ -94,6 +116,28 @@
     }
   ],
   "developer": [
+    {
+      "name": "Claude Code",
+      "slug": "claude-code",
+      "tagline": "AI coding agent from Anthropic",
+      "description": "Claude Code is an agentic coding tool that integrates with your development workflow for deep codebase understanding.",
+      "websiteUrl": "https://www.anthropic.com/claude-code",
+      "pricingModel": "PAID",
+      "startingPrice": 0,
+      "useCases": ["Code editing", "Debugging", "Codebase navigation"],
+      "features": ["Agentic coding", "Natural language", "Codebase understanding"]
+    },
+    {
+      "name": "Lovable",
+      "slug": "lovable",
+      "tagline": "No-code AI app builder",
+      "description": "Lovable builds full-stack apps from text prompts. The "vibe coding" platform for rapid app development.",
+      "websiteUrl": "https://lovable.dev",
+      "pricingModel": "FREEMIUM",
+      "startingPrice": 0,
+      "useCases": ["App prototyping", "Full-stack apps", "Rapid development"],
+      "features": ["Text to app", "Auto-backend", "React + TypeScript"]
+    },
     {
       "name": "GitHub Copilot",
       "slug": "github-copilot",
@@ -129,6 +173,17 @@
     }
   ],
   "productivity": [
+    {
+      "name": "Motion",
+      "slug": "motion",
+      "tagline": "AI-powered calendar and scheduling",
+      "description": "Motion uses AI to automatically schedule your tasks and meetings around your priorities.",
+      "websiteUrl": "https://www.usemotion.com",
+      "pricingModel": "PAID",
+      "startingPrice": 19,
+      "useCases": ["Task scheduling", "Calendar management", "Time blocking"],
+      "features": ["Auto-scheduling", "Priority-based", "Team sync"]
+    },
     {
       "name": "Perplexity AI",
       "slug": "perplexity-ai",
