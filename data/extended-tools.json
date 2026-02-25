@@ -1,39 +1,4 @@
 {
-  "imageDesign": [
-    {
-      "name": "Midjourney",
-      "slug": "midjourney",
-      "tagline": "AI image generation via Discord",
-      "description": "Midjourney creates stunning, artistic images from text prompts. Known for beautiful, detailed outputs.",
-      "websiteUrl": "https://www.midjourney.com",
-      "pricingModel": "PAID",
-      "startingPrice": 10,
-      "useCases": ["Art creation", "Product visualization", "Marketing assets"],
-      "features": ["High-quality images", "Style variations", "Upscaling"]
-    },
-    {
-      "name": "Leonardo.ai",
-      "slug": "leonardo-ai",
-      "tagline": "AI art and game asset generator",
-      "description": "Leonardo creates production-quality visual assets for games and creative projects.",
-      "websiteUrl": "https://leonardo.ai",
-      "pricingModel": "FREEMIUM",
-      "startingPrice": 0,
-      "useCases": ["Game assets", "Concept art", "Marketing images"],
-      "features": ["Fine-tuned models", "Canvas editor", "Motion"]
-    },
-    {
-      "name": "Canva AI",
-      "slug": "canva-ai",
-      "tagline": "AI design tools for non-designers",
-      "description": "Canva's Magic Write and AI features help create designs, presentations, and social media content.",
-      "websiteUrl": "https://www.canva.com",
-      "pricingModel": "FREEMIUM",
-      "startingPrice": 15,
-      "useCases": ["Social graphics", "Presentations", "Marketing materials"],
-      "features": ["Magic Write", "Text to Image", "Background remover"]
-    }
-  ],
   "video": [
     {
       "name": "OpenAI Sora",
@@ -43,8 +8,16 @@
       "websiteUrl": "https://openai.com/sora",
       "pricingModel": "PAID",
       "startingPrice": 100,
-      "useCases": ["Video generation", "Creative content", "Prototypes"],
-      "features": ["Text to video", "High quality", "Consistent characters"]
+      "useCases": [
+        "Video generation",
+        "Creative content",
+        "Prototypes"
+      ],
+      "features": [
+        "Text to video",
+        "High quality",
+        "Consistent characters"
+      ]
     },
     {
       "name": "Runway Gen-2",
@@ -54,30 +27,56 @@
       "websiteUrl": "https://runwayml.com",
       "pricingModel": "FREEMIUM",
       "startingPrice": 12,
-      "useCases": ["Video generation", "Motion graphics", "Video editing"],
-      "features": ["Text to video", "Image to video", "Video to video"]
-    },
+      "useCases": [
+        "Video generation",
+        "Motion graphics",
+        "Video editing"
+      ],
+      "features": [
+        "Text to video",
+        "Image to video",
+        "Video to video"
+      ]
+    }
+  ],
+  "developer": [
     {
-      "name": "HeyGen",
-      "slug": "heygen",
-      "tagline": "AI avatar video generation",
-      "description": "HeyGen creates professional videos with AI avatars. Perfect for marketing and training content.",
-      "websiteUrl": "https://www.heygen.com",
-      "pricingModel": "FREEMIUM",
-      "startingPrice": 24,
-      "useCases": ["Marketing videos", "Training content", "Sales videos"],
-      "features": ["AI avatars", "Text to speech", "Templates"]
-    },
-    {
-      "name": "Synthesia",
-      "slug": "synthesia",
-      "tagline": "AI video creation platform",
-      "description": "Synthesia creates professional videos with AI presenters in 120+ languages.",
-      "websiteUrl": "https://www.synthesia.io",
+      "name": "Claude Code",
+      "slug": "claude-code",
+      "tagline": "AI coding agent from Anthropic",
+      "description": "Claude Code is an agentic coding tool that integrates with your development workflow.",
+      "websiteUrl": "https://www.anthropic.com/claude-code",
       "pricingModel": "PAID",
-      "startingPrice": 22,
-      "useCases": ["Training videos", "How-to content", "Corporate comms"],
-      "features": ["AI presenters", "Multilingual", "Screen recorder"]
+      "startingPrice": 0,
+      "useCases": [
+        "Code editing",
+        "Debugging",
+        "Codebase navigation"
+      ],
+      "features": [
+        "Agentic coding",
+        "Natural language",
+        "Codebase understanding"
+      ]
+    },
+    {
+      "name": "Lovable",
+      "slug": "lovable",
+      "tagline": "No-code AI app builder",
+      "description": "Lovable builds full-stack apps from text prompts for rapid app development.",
+      "websiteUrl": "https://lovable.dev",
+      "pricingModel": "FREEMIUM",
+      "startingPrice": 0,
+      "useCases": [
+        "App prototyping",
+        "Full-stack apps",
+        "Rapid development"
+      ],
+      "features": [
+        "Text to app",
+        "Auto-backend",
+        "React + TypeScript"
+      ]
     }
   ],
   "audio": [
@@ -89,143 +88,180 @@
       "websiteUrl": "https://www.hume.ai",
       "pricingModel": "PAID",
       "startingPrice": 50,
-      "useCases": ["Voice generation", "Emotional speech", "Character voices"],
-      "features": ["Expressive voice", "Emotional control", "Unique characters"]
+      "useCases": [
+        "Voice generation",
+        "Emotional speech",
+        "Character voices"
+      ],
+      "features": [
+        "Expressive voice",
+        "Emotional control",
+        "Unique characters"
+      ]
     },
     {
       "name": "ElevenLabs",
       "slug": "elevenlabs",
       "tagline": "Most realistic AI voice generator",
-      "description": "ElevenLabs creates lifelike speech from text with voice cloning capabilities.",
+      "description": "Lifelike speech with voice cloning. Best quality for audiobooks and content.",
       "websiteUrl": "https://elevenlabs.io",
       "pricingModel": "FREEMIUM",
       "startingPrice": 0,
-      "useCases": ["Voiceovers", "Audiobooks", "Content narration"],
-      "features": ["Voice cloning", "Multilingual", "Emotion control"]
-    },
-    {
-      "name": "Murf AI",
-      "slug": "murf-ai",
-      "tagline": "Studio-quality AI voiceovers",
-      "description": "Murf creates professional voiceovers from text for videos, presentations, and e-learning.",
-      "websiteUrl": "https://murf.ai",
-      "pricingModel": "FREEMIUM",
-      "startingPrice": 0,
-      "useCases": ["E-learning", "YouTube videos", "Podcasts"],
-      "features": ["120+ voices", "Voice changer", "Google Slides add-on"]
-    }
-  ],
-  "developer": [
-    {
-      "name": "Claude Code",
-      "slug": "claude-code",
-      "tagline": "AI coding agent from Anthropic",
-      "description": "Claude Code is an agentic coding tool that integrates with your development workflow for deep codebase understanding.",
-      "websiteUrl": "https://www.anthropic.com/claude-code",
-      "pricingModel": "PAID",
-      "startingPrice": 0,
-      "useCases": ["Code editing", "Debugging", "Codebase navigation"],
-      "features": ["Agentic coding", "Natural language", "Codebase understanding"]
-    },
-    {
-      "name": "Lovable",
-      "slug": "lovable",
-      "tagline": "No-code AI app builder",
-      "description": "Lovable builds full-stack apps from text prompts. The "vibe coding" platform for rapid app development.",
-      "websiteUrl": "https://lovable.dev",
-      "pricingModel": "FREEMIUM",
-      "startingPrice": 0,
-      "useCases": ["App prototyping", "Full-stack apps", "Rapid development"],
-      "features": ["Text to app", "Auto-backend", "React + TypeScript"]
-    },
-    {
-      "name": "GitHub Copilot",
-      "slug": "github-copilot",
-      "tagline": "AI pair programmer",
-      "description": "Copilot suggests code and entire functions in real-time right in your editor.",
-      "websiteUrl": "https://github.com/features/copilot",
-      "pricingModel": "PAID",
-      "startingPrice": 10,
-      "useCases": ["Code completion", "Unit tests", "Documentation"],
-      "features": ["Code suggestions", "Chat interface", "CLI integration"]
-    },
-    {
-      "name": "Cursor",
-      "slug": "cursor",
-      "tagline": "AI-first code editor",
-      "description": "Cursor is a code editor built for AI pair programming with built-in chat and composer.",
-      "websiteUrl": "https://cursor.sh",
-      "pricingModel": "FREEMIUM",
-      "startingPrice": 0,
-      "useCases": ["Code editing", "Refactoring", "Code review"],
-      "features": ["AI chat", "Composer", "Codebase understanding"]
-    },
-    {
-      "name": "V0 by Vercel",
-      "slug": "v0-vercel",
-      "tagline": "Generate React UI with AI",
-      "description": "V0 generates React components from text prompts using shadcn/ui and Tailwind CSS.",
-      "websiteUrl": "https://v0.dev",
-      "pricingModel": "FREE",
-      "startingPrice": 0,
-      "useCases": ["UI components", "Landing pages", "Prototyping"],
-      "features": ["Text to UI", "React export", "shadcn/ui integration"]
+      "useCases": [
+        "Audiobooks",
+        "Voiceovers",
+        "Content"
+      ],
+      "features": [
+        "Voice cloning",
+        "130+ voices",
+        "Emotion control"
+      ]
     }
   ],
   "productivity": [
     {
       "name": "Motion",
       "slug": "motion",
-      "tagline": "AI-powered calendar and scheduling",
-      "description": "Motion uses AI to automatically schedule your tasks and meetings around your priorities.",
+      "tagline": "AI-powered calendar",
+      "description": "Motion uses AI to automatically schedule your tasks around your priorities.",
       "websiteUrl": "https://www.usemotion.com",
       "pricingModel": "PAID",
       "startingPrice": 19,
-      "useCases": ["Task scheduling", "Calendar management", "Time blocking"],
-      "features": ["Auto-scheduling", "Priority-based", "Team sync"]
+      "useCases": [
+        "Calendar",
+        "Scheduling",
+        "Time management"
+      ],
+      "features": [
+        "Auto-scheduling",
+        "Priority-based",
+        "Team sync"
+      ]
     },
     {
       "name": "Perplexity AI",
-      "slug": "perplexity-ai",
-      "tagline": "AI-powered answer engine",
-      "description": "Perplexity provides accurate, cited answers to any question using real-time web search.",
+      "slug": "perplexity",
+      "tagline": "AI answer engine",
+      "description": "Get accurate, cited answers to any question with real-time web search.",
       "websiteUrl": "https://www.perplexity.ai",
       "pricingModel": "FREEMIUM",
       "startingPrice": 0,
-      "useCases": ["Research", "Questions", "Learning"],
-      "features": ["Citations", "Real-time search", "Copilot mode"]
-    },
+      "useCases": [
+        "Research",
+        "Questions",
+        "Learning"
+      ],
+      "features": [
+        "Real-time search",
+        "Citations",
+        "Follow-up questions"
+      ]
+    }
+  ],
+  "image-design": [
     {
-      "name": "Notion AI",
-      "slug": "notion-ai",
-      "tagline": "AI writing assistant in your workspace",
-      "description": "Notion AI helps write, edit, summarize, and brainstorm right inside Notion.",
-      "websiteUrl": "https://www.notion.so/product/ai",
+      "name": "Midjourney",
+      "slug": "midjourney",
+      "tagline": "AI image generation",
+      "description": "Create stunning, artistic images from text prompts.",
+      "websiteUrl": "https://www.midjourney.com",
       "pricingModel": "PAID",
       "startingPrice": 10,
-      "useCases": ["Writing", "Summarizing", "Brainstorming"],
-      "features": ["Draft generation", "Translation", "Q&A on docs"]
-    },
+      "useCases": [
+        "Art",
+        "Concepts",
+        "Illustrations"
+      ],
+      "features": [
+        "High quality",
+        "Artistic",
+        "Community"
+      ]
+    }
+  ],
+  "e-commerce": [
     {
-      "name": "Gamma",
-      "slug": "gamma",
-      "tagline": "AI presentations and documents",
-      "description": "Gamma creates beautiful presentations, documents, and websites from text prompts.",
-      "websiteUrl": "https://gamma.app",
+      "name": "Jasper",
+      "slug": "jasper",
+      "tagline": "AI writing for ecommerce",
+      "description": "Create product descriptions and marketing content at scale.",
+      "websiteUrl": "https://www.jasper.ai",
+      "pricingModel": "PAID",
+      "startingPrice": 49,
+      "useCases": [
+        "Product descriptions",
+        "Ads",
+        "Content"
+      ],
+      "features": [
+        "Brand voice",
+        "Templates",
+        "SEO"
+      ]
+    }
+  ],
+  "marketing": [
+    {
+      "name": "ChatGPT",
+      "slug": "chatgpt",
+      "tagline": "Multi-purpose AI",
+      "description": "Brainstorm ideas, write copy, analyze data.",
+      "websiteUrl": "https://chat.openai.com",
       "pricingModel": "FREEMIUM",
+      "startingPrice": 20,
+      "useCases": [
+        "Content",
+        "Strategy",
+        "Analysis"
+      ],
+      "features": [
+        "Writing",
+        "Coding",
+        "Analysis"
+      ]
+    }
+  ],
+  "legal": [
+    {
+      "name": "Harvey AI",
+      "slug": "harvey-ai",
+      "tagline": "AI for legal work",
+      "description": "Draft documents and analyze contracts with AI.",
+      "websiteUrl": "https://www.harvey.ai",
+      "pricingModel": "ENTERPRISE",
       "startingPrice": 0,
-      "useCases": ["Presentations", "Documents", "Websites"],
-      "features": ["One-click themes", "AI editing", "Analytics"]
+      "useCases": [
+        "Contracts",
+        "Documents",
+        "Legal research"
+      ],
+      "features": [
+        "Document drafting",
+        "Analysis",
+        "Research"
+      ]
     }
   ],
   "sales": [
     {
       "name": "Apollo AI",
       "slug": "apollo-ai",
-      "tagline": "AI sales intelligence platform",
-      "description": "Apollo combines B2B contacts database with AI writing and engagement tools.",
+      "tagline": "AI sales intelligence",
+      "description": "B2B contacts database with AI writing and engagement.",
       "websiteUrl": "https://www.apollo.io",
       "pricingModel": "FREEMIUM",
       "startingPrice": 0,
-      "useCases": ["Lead gen", "Email automation", "Prospecting"],
-      "features": ["Contact database", "Email
+      "useCases": [
+        "Lead gen",
+        "Email automation",
+        "Prospecting"
+      ],
+      "features": [
+        "Contact database",
+        "Email sequences",
+        "AI writing"
+      ]
+    }
+  ]
+}
