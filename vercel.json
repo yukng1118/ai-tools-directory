@@ -1,6 +1,5 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "distDir": "dist",
+  "outputDirectory": ".next",
   "cleanUrls": true
 }
