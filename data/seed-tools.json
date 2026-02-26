@@ -57,6 +57,18 @@
   ],
   "tools": [
     {
+      "name": "OpenClaw",
+      "categorySlug": "productivity",
+      "tagline": "AI agent platform for workflow automation",
+      "description": "OpenClaw lets you deploy autonomous AI agents that handle real workflows—from email automation to DevOps to content creation. Now backed by OpenAI.",
+      "websiteUrl": "https://openclaw.ai",
+      "pricingModel": "FREEMIUM",
+      "startingPrice": 0,
+      "hasFreeTier": true,
+      "hasFreeTrial": true,
+      "useCases": ["Workflow automation", "Email management", "Content creation", "Social media", "DevOps"]
+    },
+    {
       "name": "Jasper",
       "categorySlug": "e-commerce",
       "tagline": "AI writing assistant for e-commerce product descriptions",
